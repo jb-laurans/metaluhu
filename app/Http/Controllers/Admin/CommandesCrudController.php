@@ -52,7 +52,6 @@ class CommandesCrudController extends CrudController
 
 
         // var_dump(backpack_user() );
-        $this->crud->addClause('where','mailClient',backpack_user()->email);
 
         /**
          * Columns can be defined using the fluent syntax:

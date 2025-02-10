@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
 @if (backpack_theme_config('meta_robots_content'))
 <meta name="robots" content="{{ backpack_theme_config('meta_robots_content', 'noindex, nofollow') }}">
 @endif
