@@ -50,7 +50,7 @@ $widgets['before_content'][] = [
     <p>Bienvenue sur l'Espace Client MetaluPlast'</p>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-header">Évolution des commandes</div>
                 <div class="card-body">
@@ -82,7 +82,15 @@ $widgets['before_content'][] = [
                         options: {
                             responsive: true,
                             scales: {
-                                y: { beginAtZero: true }
+                                y: { beginAtZero: true,
+                                                ticks: {
+                              stepSize: 1, // Définir le stepSize à 1
+                              precision: 0, // Assurer qu'il n'y a pas de décimales
+                              callback: function (value) {
+                                  return value.toFixed(0); // Formatter comme entier
+                              }
+                          }
+                                 }
                             }
                         }
                     });
