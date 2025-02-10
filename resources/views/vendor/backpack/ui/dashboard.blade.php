@@ -47,7 +47,7 @@ $widgets['before_content'][] = [
 @endphp
 
 @section('content')
-    <p>Bienvenue sur l'Espace Client MetaluPlast'</p>
+    
 
     <div class="row">
         <div class="col-md-6">

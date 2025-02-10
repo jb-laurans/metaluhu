@@ -35,6 +35,52 @@
         background-color: rgba(0, 0, 0, 0.4); /* Ajustez l'opacité pour obtenir l'effet souhaité */
         z-index: -1; /* Assurez-vous que la superposition est derrière le contenu */
     }
+
+    .switch-mode button {
+    background: #1f1d24 !important; 
+    border-radius: 8px; 
+    padding: 16px; 
+    transition: background 0.3s ease-in-out;
+}
+
+a {
+    color: var(--tblr-primary); /* Couleur principale de votre site */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transition douce pour les effets de survol */
+    background-color:rgb(253, 253, 255);
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    display: inline-block; 
+    transition: all 0.3s ease-in-out; 
+}
+
+a:hover {
+    color:#6354BF !important; 
+    background: rgba(164, 160, 172, 0.45) !important; 
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7); 
+    text-decoration: none;
+}
+
+
+.switch-mode button:hover {a {
+    color:rgb(255, 255, 255) !important; 
+    text-decoration: none; 
+    background: rgba(103, 102, 104, 0.65) ; 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    display: inline-block; 
+    transition: all 0.3s ease-in-out; 
+}
+    background: rgba(31, 29, 36, 0.8) !important; 
+}
+
+.switch-mode i {
+    color: #7bb485 !important; 
+    font-size: 1.5rem; 
+    font-size: 2rem !important;
+}
+
+
     
 </style>
 
