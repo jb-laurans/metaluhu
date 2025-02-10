@@ -11,7 +11,7 @@
                     <i class="fa fa-shopping-cart"></i> Panier
                 </a>
             </li>
-            <!-- Ajoutez d'autres éléments de menu ici -->
+       
         </ul>
     </div>
 </nav>

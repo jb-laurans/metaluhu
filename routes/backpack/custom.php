@@ -18,6 +18,10 @@ Route::group([
 ], function () { // custom admin routes
     Route::crud('commandes', 'CommandesCrudController');
     Route::crud('factures', 'FacturesCrudController');
+    Route::get('charts/devis', 'Charts\DevisChartController@response')->name('charts.devis.index');
+    Route::get('dashboard/commandes-chart', 'CommandesCrudController@getCommandesChartData')->name('dashboard.commandes.chart');
+
+
 }); // this should be the absolute last line of this file
 
 /**

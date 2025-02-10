@@ -3,3 +3,4 @@
 
 <x-backpack::menu-item title="Commandes" icon="la la-question" :link="backpack_url('commandes')" />
 <x-backpack::menu-item title="Factures" icon="la la-question" :link="backpack_url('factures')" />
+<!-- <x-backpack::menu-item title="Devis" icon="la la-question" :link="backpack_url('devis')" /> -->
