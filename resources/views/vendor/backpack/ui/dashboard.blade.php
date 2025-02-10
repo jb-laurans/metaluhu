@@ -1,6 +1,21 @@
 @extends(backpack_view('blank'))
+<?php
+
+$registeredUsers = \App\Models\User::count();
+
+
+
+$commands = \App\Models\Commandes::count();
+
+?>
+
+
+
+
 
 @php
+
+
     $widgets['before_content'][] = [
         'type'        => 'jumbotron',
         'heading'     => 'Bienvenu !',
@@ -8,6 +23,27 @@
         'button_link' => backpack_url('logout'),
         'button_text' => 'Se Déconnecter',
     ];
+@endphp
+
+@php
+$widgets['before_content'][] = [
+    'type'    => 'div',
+    'class'   => 'row justify-content-start', // Utiliser les classes Bootstrap pour la mise en page
+    'content' => [ // widgets
+        [
+            'type'        => 'progress',
+            'class'       => 'card text-white bg-primary mb-2 text-center', // Définir la largeur de chaque widget
+            'value'       => $registeredUsers,
+            'description' => 'Registered users.',
+        ],
+        [
+            'type'        => 'progress',
+            'class'       => 'card text-white bg-danger mb-2 text-center', // Définir la largeur de chaque widget
+            'value'       => $commands,
+            'description' => 'Nombres de Commandes.',
+        ],
+    ],
+];
 @endphp
 
 @section('content')
